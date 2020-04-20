@@ -1,32 +1,33 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <Index></Index>
+      <Home></Home>
+      <Bottom></Bottom>
     </div>
     <router-view/>
   </div>
 </template>
 
+<script>
+  import Index from './components/index'
+  import Home from './components/home'
+  import Bottom from './components/bottom'
+  export default {
+    name:'app',
+    components:{
+      Index,
+      Home,
+      Bottom
+    }
+  }
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  body{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
