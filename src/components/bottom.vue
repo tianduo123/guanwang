@@ -117,7 +117,7 @@
     }
     .copyright{
         width: 100%;
-        height: 153px;
+        height: 150px;
         /*border-top: 1px solid #6f6f6f;*/
         display: flex;
         flex-direction: column;
