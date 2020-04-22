@@ -76,6 +76,7 @@
         width: 100%;
         height:508px;
         background:#000000;
+        /*position: absolute;*/
     }
     .about{
         width: 80%;

@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <Index></Index>
-<!--      <Home></Home>-->
+<!--      <div class="bg">-->
+<!--        <img src="./assets/bimg2.jpg" alt="" style="width: 100%;height: 100%">-->
+<!--      </div>-->
+      <Index class="top"></Index>
       <Home2></Home2>
       <Bottom></Bottom>
     </div>
@@ -27,12 +29,23 @@
 </script>
 
 <style>
-
   html,body{
-    width:100%;
     margin: 0;
-    background: yellow;
-    box-sizing: border-box;
-    /*padding-bottom: 20px;*/
+    padding: 0
   }
+  body{
+      margin-left: 0px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      background-image: url("./assets/bimg2.jpg");
+      background-size: cover;
+      background-attachment:fixed;
+      background-position: 0 123px;
+  }
+    .top{
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
 </style>

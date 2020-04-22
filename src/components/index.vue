@@ -69,6 +69,7 @@
         display: flex;
         align-items: center;
         justify-content:  space-around;
+        z-index: 99;
     }
     .menu{
         width: 60%;
