@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-<!--      <div class="bg">-->
-<!--        <img src="./assets/bimg2.jpg" alt="" style="width: 100%;height: 100%">-->
-<!--      </div>-->
       <Index class="top"></Index>
-      <Home2></Home2>
-      <Bottom></Bottom>
+      <Home></Home>
+<!--      <Home2></Home2>-->
+<!--      <Bottom></Bottom>-->
     </div>
     <router-view/>
   </div>
@@ -14,16 +12,16 @@
 
 <script>
   import Index from './components/index'
-  import Home from './components/home'
   import Bottom from './components/bottom'
   import Home2 from './components/home2'
+  import Home from './components/home'
   export default {
     name:'app',
     components:{
       Index,
-      Home,
       Bottom,
-      Home2
+      Home2,
+      Home
     }
   }
 </script>
@@ -42,6 +40,8 @@
       background-size: cover;
       background-attachment:fixed;
       background-position: 0 123px;
+      width: 100%;
+      /*height: 3232px;*/
   }
     .top{
         position: fixed;
